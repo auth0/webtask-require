@@ -1,0 +1,2 @@
+# webtask-js
+require('webtask')
