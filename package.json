@@ -1,0 +1,27 @@
+{
+  "name": "webtask",
+  "version": "1.0.0",
+  "description": "require('webtask')('sms')(params).then(...)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auth0/webtask-js.git"
+  },
+  "keywords": [
+    "webtask",
+    "spa",
+    "angular",
+    "ember",
+    "javascript",
+    "backendless"
+  ],
+  "author": "Auth0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/auth0/webtask-js/issues"
+  },
+  "homepage": "https://github.com/auth0/webtask-js"
+}
