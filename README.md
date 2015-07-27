@@ -1,13 +1,17 @@
 # webtask
 
+Run node.js code without a backend.
+
 Create a webtask
 
 ```bash
+$ npm install -g wt-cli
+$ wt init
 $ echo "module.exports = function (cb) {cb(null, 'Hello');}" > hello.js
 $ wt create hello.js
 ```
 
-Call it
+Call it from JavaScript
 
 ```js
 var wt = require('webtask')('<your-webtask-account>');
