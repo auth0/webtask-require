@@ -16,8 +16,16 @@ wt('hello').then(function(result) {
 });
 ```
 
+## Sending Parameters
 
-## Auth with Auth0 (coming soon)
+```js
+var wt = require('webtask')('<your-webtask-account>');
+wt('hello')({foo: 'bar'}).then(function(result) {
+  console.log(result);
+});
+```
+
+## Secure Webtasks
 
 Create the webtask protected with Auth0 using JSON Web Tokens
 
