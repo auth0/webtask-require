@@ -24,13 +24,23 @@ wt('hello').then(function(result) {
 
 ```js
 var wt = require('webtask')('<your-webtask-account>');
-wt('hello')({foo: 'bar'}).then(function(result) {
+wt('hello', {foo: 'bar'}).then(function(result) {
   console.log(result);
 });
 ```
 
-## Secure Webtasks
+## Specify HTTP Method
 
+```js
+wt.get('hello');
+wt.post('hello', { foo: 'bar' });
+wt.patch('hello', { foo: 'bar' });
+wr.put('hello', { foo: 'bar' });
+wt.del('hello');
+```
+
+## Secure Webtasks
+ 
 Create the webtask protected with Auth0 using JSON Web Tokens
 
 ```bash
@@ -47,7 +57,7 @@ var wt = require('webtask')('<your-webtask-account>');
 lock.show({
   popup: true,
 }, function (err, profile, token) {
-    wt('hello').withAuth(token).then(function(result) {
+    wt.withAuth(token)('hello').then(function(result) {
         console.log(result);
     });
 });
