@@ -1,5 +1,5 @@
 {
-  "name": "webtask",
+  "name": "webtask-require",
   "version": "1.0.0",
   "description": "require('webtask')('sms')(params).then(...)",
   "main": "index.js",
