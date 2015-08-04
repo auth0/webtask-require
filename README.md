@@ -1,6 +1,6 @@
-# webtask
+# webtask-require
 
-Run node.js code without a backend.
+Use `webtask-require` to call your webtasks from the browser or native apps. Run node.js code without a backend. 
 
 Create a webtask
 
@@ -14,7 +14,7 @@ $ wt create hello.js
 Call it from JavaScript
 
 ```js
-var wt = require('webtask')('<your-webtask-account>');
+var wt = require('webtask-require')('<your-webtask-container>');
 wt('hello').then(function(result) {
   console.log(result);
 });
@@ -23,7 +23,7 @@ wt('hello').then(function(result) {
 ## Sending Parameters
 
 ```js
-var wt = require('webtask')('<your-webtask-account>');
+var wt = require('webtask-require')('<your-webtask-container>');
 wt('hello', {foo: 'bar'}).then(function(result) {
   console.log(result);
 });
@@ -52,7 +52,7 @@ Call it
 
 ```js
 var lock = new Auth0Lock('<your-clientid>', '<yours.auth0.com>');
-var wt = require('webtask')('<your-webtask-account>');
+var wt = require('webtask-require')('<your-webtask-container>');
 
 lock.show({
   popup: true,
