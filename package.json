@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Call your webtasks from the browser",
   "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && browserify index.js -s wt -o dist/bundle.js && browserify index.js -s wt -t uglifyify -o dist/bundle.min.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/auth0/webtask-require.git"
@@ -24,5 +27,9 @@
   "dependencies": {
     "bluebird": "^2.9.34",
     "superagent": "^1.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "uglifyify": "^3.0.1"
   }
 }
