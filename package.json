@@ -1,14 +1,11 @@
 {
   "name": "webtask-require",
   "version": "1.0.0",
-  "description": "require('webtask')('sms')(params).then(...)",
+  "description": "require('webtask-require')('hello').then(...)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/auth0/webtask-js.git"
+    "url": "https://github.com/auth0/webtask-require.git"
   },
   "keywords": [
     "webtask",
@@ -21,9 +18,9 @@
   "author": "Auth0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/auth0/webtask-js/issues"
+    "url": "https://github.com/auth0/webtask-require/issues"
   },
-  "homepage": "https://github.com/auth0/webtask-js",
+  "homepage": "https://github.com/auth0/webtask-require",
   "dependencies": {
     "bluebird": "^2.9.34",
     "superagent": "^1.2.0"
