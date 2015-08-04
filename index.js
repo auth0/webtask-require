@@ -23,7 +23,12 @@ module.exports = function (container, wt_domain) {
         var body    = opts.body;
         var headers = opts.headers || {};
 
-        if(auth_token) headers.authorization = 'Bearer ' + auth_token;
+        if(auth_token) {
+            headers.authorization = 'Bearer ' + auth_token;
+
+            // Reset...
+            auth_token = '';
+        }
 
         var url = build_wt_url(wt_name);
 
