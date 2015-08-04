@@ -1,7 +1,7 @@
 {
   "name": "webtask-require",
   "version": "1.0.0",
-  "description": "require('webtask-require')('hello').then(...)",
+  "description": "require('webtask-require')('<your-container>')('hello').then(...)",
   "main": "index.js",
   "repository": {
     "type": "git",
