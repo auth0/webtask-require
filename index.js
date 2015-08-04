@@ -2,9 +2,11 @@ var path       = require('path');
 var Bluebird   = require('bluebird');
 var superagent = require('superagent');
 
-module.exports = function (container) {
+module.exports = function (container, wt_domain) {
     var WebtaskUnspecified = new Error('Must specify webtask to call');
     var AccountUnspecified = new Error('Must specify account URL');
+    
+    var base_url = wt_domain || 'https://webtask.it.auth0.com';
 
     var auth_token = '';
 
@@ -12,9 +14,7 @@ module.exports = function (container) {
         throw AccountUnspecified;
 
     function build_wt_url(wt_name) {
-        var base_url = 'https://webtask.it.auth0.com/';
-
-        return base_url + 'api/run/' + path.join(container, wt_name);
+        return base_url + '/' + path.join('api', 'run', container, wt_name);
     }
 
     function make_request(opts) {
