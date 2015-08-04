@@ -2,6 +2,15 @@
 
 Use `webtask-require` to call your webtasks from the browser or native apps. Run node.js code without a backend. 
 
+```js
+var wt = require('webtask-require')('<your-webtask-container>');
+wt('hello').then(function(result) {
+  console.log(result);
+});
+```
+
+# Call a Webtask
+
 Create a webtask
 
 ```bash
