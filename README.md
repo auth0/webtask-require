@@ -9,7 +9,7 @@ wt('hello').then(function(result) {
 });
 ```
 
-# Call a Webtask
+## Call a Webtask
 
 Create a webtask
 
