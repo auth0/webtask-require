@@ -1,6 +1,6 @@
 {
   "name": "webtask-require",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Call your webtasks from the browser",
   "main": "index.js",
   "repository": {
