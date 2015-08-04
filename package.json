@@ -1,7 +1,7 @@
 {
   "name": "webtask-require",
   "version": "1.0.0",
-  "description": "require('webtask-require')('<your-container>')('hello').then(...)",
+  "description": "Call your webtasks from the browser",
   "main": "index.js",
   "repository": {
     "type": "git",
