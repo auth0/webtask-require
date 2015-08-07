@@ -4,7 +4,7 @@
   "description": "Call your webtasks from the browser",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p dist && browserify index.js -s wt -o dist/bundle.js && browserify index.js -s wt -t uglifyify -o dist/bundle.min.js"
+    "build": "mkdir -p dist && browserify index.js -s wt -o dist/bundle.js && browserify index.js -s wt -g uglifyify -o dist/bundle.min.js"
   },
   "repository": {
     "type": "git",
