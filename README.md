@@ -1,6 +1,13 @@
 # webtask-require
 
-Use webtasks with a require-like pattern.
+Use `webtask-require` to call your webtasks from the browser using a require-like pattern. Run node.js code without a backend. 
+
+```js
+var wt = require('webtask-require')('<your-webtask-container>');
+wt('hello').then(function(result) {
+  console.log(result);
+});
+```
 
 ## Install
 
@@ -14,15 +21,6 @@ Or our CDN:
 
 ```html
 <script src="http://cdn.auth0.com/js/webtask-1.0.2.min.js"></script>
-```
-
-Use `webtask-require` to call your webtasks from the browser. Run node.js code without a backend. 
-
-```js
-var wt = require('webtask-require')('<your-webtask-container>');
-wt('hello').then(function(result) {
-  console.log(result);
-});
 ```
 
 ## Usage
